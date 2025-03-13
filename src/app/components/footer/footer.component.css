@@ -1,0 +1,81 @@
+/* Style du footer */
+footer {
+  background-color: #6f42c1; /* Fond violet */
+  color: black; /* Écriture en noir */
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap; /* Pour que les colonnes s'adaptent sur les petits écrans */
+}
+
+.footer-logo img {
+  max-width: 150px; /* Assure que le logo n'est pas trop grand */
+  height: auto;
+}
+
+.footer-info, .footer-links {
+  width: 30%; /* Chaque colonne prend environ un tiers de l'espace */
+}
+
+.footer-info h3, .footer-links h3 {
+  font-size: 1.2rem;
+  color: black; /* Couleur noire pour les titres */
+  margin-bottom: 10px;
+}
+
+.footer-info p, .footer-links ul {
+  font-size: 1rem;
+  color: black; /* Écriture noire pour le texte */
+}
+
+.footer-info p a, .footer-links a {
+  color: black; /* Liens en noir */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-info p a:hover, .footer-links a:hover {
+  color: #333; /* Changement de couleur au survol (gris foncé) */
+}
+
+/* Liste des liens */
+.footer-links ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+/* Responsivité : Sur mobile, les colonnes deviennent des blocs */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-info, .footer-links {
+      width: 100%; /* Chaque section occupe toute la largeur en petit écran */
+      margin-bottom: 20px;
+  }
+}
+/* CSS pour organiser les logos verticalement avec flexbox */
+.logo-container {
+  display: flex;
+  flex-direction: column;  /* Organiser les images de façon verticale */
+  align-items: center;  /* Centrer les logos horizontalement */
+  gap: 20px;  /* Ajouter un espacement entre les logos */
+}
+
+.logo-container img {
+  max-width: 150px; /* Taille maximale des logos */
+  height: auto;  /* Garder les proportions de l'image */
+}

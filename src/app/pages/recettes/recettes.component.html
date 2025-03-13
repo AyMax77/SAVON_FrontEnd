@@ -1,0 +1,46 @@
+<div class="container mt-4">
+  <h2>Liste des Recettes</h2>
+
+  <!-- Bouton pour ajouter une nouvelle recette -->
+  <a routerLink="/recette/Créer" class="btn btn-primary mb-3">Ajouter une recette</a>
+
+  <!-- Liste des recettes dans des cartes Bootstrap -->
+  <div class="row">
+    <div *ngFor="let recette of recettes" class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ recette.titre }}</h5>
+          <p class="card-text">{{ recette.description }}</p>
+
+          <!-- Affichage des détails de la recette -->
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <strong>Surgraissage:</strong> {{ recette.surgraissage }}%
+            </li>
+            <li class="list-group-item">
+              <strong>Apport en eau:</strong> {{ recette.apportEnEau }}%
+            </li>
+            <li class="list-group-item">
+              <strong>Avec soude:</strong> {{ recette.avecSoude ? 'Oui' : 'Non' }}
+            </li>
+            <li class="list-group-item">
+              <strong>Concentration alcalin:</strong> {{ recette.concentrationAlcalin }}%
+            </li>
+            <li class="list-group-item">
+              <strong>Quantité alcalin:</strong> {{ recette.qteAlcalin }} g
+            </li>
+          </ul>
+          <!-- Composant radar-chart pour afficher les résultats -->
+          <div class="mt-3">
+            <app-radar-chart [resultats]="recette.listeResultats"></app-radar-chart>
+          </div>
+
+          <!-- Bouton pour supprimer la recette -->
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

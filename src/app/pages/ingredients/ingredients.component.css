@@ -1,0 +1,72 @@
+/* Style général pour le conteneur des sections de texte */
+.text-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.text-left, .text-right {
+    width: 48%;
+}
+
+.text-left {
+    padding-right: 20px;
+}
+
+.text-right {
+    padding-left: 20px;
+}
+
+/* Style pour le titre */
+h2 {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;     /* Centre verticalement */
+    text-align: center;      /* Centre le texte à l'intérieur de l'élément */
+    color: #6f42c1;          /* Couleur violette pour correspondre au thème */
+    font-weight: bold;       /* Texte en gras */
+    margin: 0 auto;          /* Centre le titre horizontalement */
+    padding: 20px 0;         /* Ajoute un peu d'espace autour du titre */
+    width: 220%;             /* Occupe toute la largeur disponible */
+}
+
+/* Style pour le tableau */
+table.ingredients-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Style pour les en-têtes du tableau */
+table.ingredients-table th {
+    background-color: #6f42c1;
+    color: white;
+    text-align: center;  /* Centrage du texte dans les en-têtes */
+    padding: 30px;
+    border: 1px solid black;
+    font-weight: bold; 
+}
+
+/* Style pour les cellules du tableau */
+table.ingredients-table td {
+    padding: 12px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;   /* Centrage du texte dans les cellules */
+}
+
+/* Style pour les lignes alternées du tableau */
+table.ingredients-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style pour les messages de chargement et d'erreur */
+.loading-message, .error-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.error-message {
+    color: red;
+}

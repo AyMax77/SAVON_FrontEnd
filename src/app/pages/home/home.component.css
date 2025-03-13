@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .links {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .links li {
+    margin: 15px 0;
+  }
+
+  .links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+
+  .links a:hover {
+    color: #0056b3;
+  }
+  /* Base styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+img {
+  max-width: 100%;  /* Permet aux images de s'ajuster à la largeur de leur conteneur */
+  height: auto;     /* Maintient les proportions de l'image */
+  object-fit: cover; /* Si l'image doit être redimensionnée pour un conteneur fixe, elle ne sera pas déformée */
+  max-height: 300px; /* Définit une hauteur maximale pour ne pas avoir d'images trop grandes */
+  margin-bottom: 15px; /* Ajoute un espacement entre les images et le texte */
+}
+
+/* Ensure images are the same size in a container */
+.image-container {
+  width: 100%;
+  height: 300px; /* Fixe la hauteur des conteneurs d'images */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Masque les parties de l'image qui dépassent */
+}
+
+/* General styling for list of links */
+.links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links li {
+  margin: 15px 0;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #0056b3;
+}

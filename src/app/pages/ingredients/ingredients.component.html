@@ -1,0 +1,50 @@
+<div class="text-sections">
+  <div class="text-left">
+      <h2>Liste des Ingrédients</h2>
+  </div>
+</div>
+
+<table class="ingredients-table">
+  <thead>
+      <tr>
+          <th>ID</th>
+          <th>Nom</th>
+          <th>Iode</th>
+          <th>INS</th>
+          <th>SAPO</th>
+          <th>Volume Mousse</th>
+          <th>Tenue Mousse</th>
+          <th>Douceur</th>
+          <th>Pouvoir Lavant</th>
+          <th>Dureté</th>
+          <th>Solubilité</th>
+          <th>Séchage</th>
+          <th>Corps Gras</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let ingredient of ingredients">
+          <td>{{ ingredient.id }}</td>
+          <td>{{ ingredient.nom }}</td>
+          <td>{{ ingredient.iode }}</td>
+          <td>{{ ingredient.ins }}</td>
+          <td>{{ ingredient.sapo }}</td>
+          <td>{{ ingredient.volMousse }}</td>
+          <td>{{ ingredient.tenueMousse }}</td>
+          <td>{{ ingredient.douceur }}</td>
+          <td>{{ ingredient.lavant }}</td>
+          <td>{{ ingredient.durete }}</td>
+          <td>{{ ingredient.solubilite }}</td>
+          <td>{{ ingredient.sechage }}</td>
+          <td>{{ ingredient.estCorpsGras ? 'Oui' : 'Non' }}</td>
+      </tr>
+  </tbody>
+</table>
+
+<div *ngIf="isLoading" class="loading-message">
+  Chargement des ingrédients...
+</div>
+
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
