@@ -1,27 +1,67 @@
-<nav class="navbar">
+<body>
+  <nav class="navbar">
     <div class="navbar-container">
-      <div class="logo"><img src="assets/adepro_logo_trans.png"></div>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="assets/adepro_logo_trans.png" alt="Logo Adepro">
+      </div>
+
+      <!-- Menu Hamburger (visible uniquement sur mobile) -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Liens de navigation -->
       <ul class="nav-links">
         <li><a href="#">Accueil</a></li>
         <li><a href="ingredients">Ingrédients</a></li>
         <li><a href="recettes">Recettes</a></li>
-        <li><a href="Créer">Créer Ingrédients</a></li>
         <li><a href="contact">Contact</a></li>
       </ul>
-       <!-- Authentification avec volet déroulant -->
-    <div class="auth-buttons">
-      <!-- Si l'utilisateur est connecté, afficher son nom -->
-      <div class="user-info">
-        <span class="user-name" onclick="toggleDropdown()">Jean Dupont</span>
-        <div id="user-dropdown" class="dropdown-content">
-          <a href="#">Voir mon compte</a>
-          <a href="#">Se déconnecter</a>
-          <a href="#">créer un compte</a>
+
+      <!-- Authentification avec volet déroulant -->
+      <div class="auth-buttons">
+        <!-- Si l'utilisateur est connecté, afficher son nom -->
+        <div class="user-info">
+          <span class="user-name" onclick="toggleDropdown()">Jean Dupont</span>
+          <div id="user-dropdown" class="dropdown-content">
+            <a href="#">Voir mon compte</a>
+            <a href="#">Se déconnecter</a>
+            <a href="#">Créer un compte</a>
+          </div>
         </div>
+        <!-- Sinon afficher les boutons de connexion -->
+        <!-- <button class="login-btn">Connexion</button>
+             <button class="signup-btn">Inscription</button> -->
       </div>
-      <!-- Sinon afficher les boutons de connexion -->
-     
-    </div>
     </div>
   </nav>
-  
+
+  <script>
+    // Fonction pour basculer le menu hamburger
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+    // Fonction pour basculer le dropdown utilisateur
+    function toggleDropdown() {
+      const dropdown = document.getElementById('user-dropdown');
+      dropdown.classList.toggle('show');
+    }
+
+    // Fermer le dropdown si l'utilisateur clique en dehors
+    window.onclick = function(event) {
+      if (!event.target.matches('.user-name')) {
+        const dropdowns = document.querySelectorAll('.dropdown-content');
+        dropdowns.forEach(dropdown => {
+          if (dropdown.classList.contains('show')) {
+            dropdown.classList.remove('show');
+          }
+        });
+      }
+    };
+  </script>
+</body>

@@ -1,0 +1,181 @@
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+/* Formulaire */
+app-ingredient-form {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Liste des ingrédients */
+app-ingredient-list {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Section Import/Export */
+app-ingredient-import-export {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Boutons génériques */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Boutons d'action dans la liste */
+app-ingredient-list button {
+    margin-right: 10px;
+}
+
+/* Bouton Supprimer */
+app-ingredient-list button.delete {
+    background-color: #dc3545;
+}
+
+app-ingredient-list button.delete:hover {
+    background-color: #c82333;
+}
+
+/* Bouton Modifier */
+app-ingredient-list button.edit {
+    background-color: #ffc107;
+    color: #000;
+}
+
+app-ingredient-list button.edit:hover {
+    background-color: #e0a800;
+}
+
+/* Bouton Tout Supprimer */
+app-ingredient-list button.delete-all {
+    background-color: #dc3545;
+    margin-top: 10px;
+}
+
+app-ingredient-list button.delete-all:hover {
+    background-color: #c82333;
+}
+
+/* Section Import/Export */
+app-ingredient-import-export button {
+    margin-right: 10px;
+}
+
+/* Inputs dans le formulaire */
+app-ingredient-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Messages d'erreur ou de succès */
+.message {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Tableau dans la liste */
+app-ingredient-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+app-ingredient-list th,
+app-ingredient-list td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+app-ingredient-list th {
+    background-color: #007bff;
+    color: white;
+}
+
+app-ingredient-list tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    app-ingredient-form,
+    app-ingredient-list,
+    app-ingredient-import-export {
+        padding: 15px;
+    }
+
+    app-ingredient-list table {
+        font-size: 0.9em;
+    }
+
+    app-ingredient-list th,
+    app-ingredient-list td {
+        padding: 8px;
+    }
+}

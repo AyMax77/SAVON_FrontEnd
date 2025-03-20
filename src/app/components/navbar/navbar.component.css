@@ -12,24 +12,39 @@ body {
 }
 
 .navbar-container {
-  width: 100%; /* Cette ligne assure que la navbar prend 100% de la largeur disponible */
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  font-size: 1.2rem; /* Un peu plus grand pour le logo */
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.logo img {
+  height: 40px; /* Ajustez la taille du logo */
 }
 
+/* Menu Hamburger (visible uniquement sur mobile) */
+.menu-toggle {
+  display: none; /* Caché par défaut */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Navigation links */
 .nav-links {
   display: flex;
   gap: 20px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
@@ -49,7 +64,7 @@ body {
 .nav-links li a:hover {
   background-color: #ddd;
   color: #6f42c1;
-  transform: scale(1.05); /* Effet de zoom au survol */
+  transform: scale(1.05);
 }
 
 /* Auth buttons */
@@ -88,30 +103,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .nav-links li {
-    margin-bottom: 1rem;
-  }
-
-  .auth-buttons {
-    flex-direction: column;
-  }
-
-  .auth-buttons button {
-    margin-bottom: 1rem;
-  }
-}
+/* User info dropdown */
 .user-info {
   position: relative;
   cursor: pointer;
@@ -144,6 +136,42 @@ body {
   background-color: #ddd;
 }
 
-.user-info:hover .dropdown-content {
-  display: block;
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: flex; /* Afficher le menu hamburger */
+  }
+
+  .nav-links {
+    display: none; /* Cacher les liens de navigation par défaut */
+    flex-direction: column;
+    width: 100%;
+    background-color: #6f42c1;
+    position: absolute;
+    top: 60px; /* Ajustez en fonction de la hauteur de la navbar */
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex; /* Afficher les liens lorsque le menu est actif */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .auth-buttons {
+    display: none; /* Cacher les boutons d'authentification sur mobile */
+  }
+
+  .user-info {
+    display: none; /* Cacher le dropdown utilisateur sur mobile */
+  }
 }

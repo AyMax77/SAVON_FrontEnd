@@ -32,7 +32,7 @@ h2 {
 
 /* Style pour le tableau */
 table.ingredients-table {
-    width: 100%;
+    max-width: 400px;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
@@ -70,3 +70,40 @@ table.ingredients-table tr:nth-child(even) {
 .error-message {
     color: red;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les boutons */
+    margin-top: 20px; /* Espace au-dessus des boutons */
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 0; /* Supprime le padding du bouton pour que le lien prenne toute la place */
+    background-color: #6f42c1; /* Couleur de fond du bouton */
+    border: none;
+    border-radius: 8px; /* Coins arrondis */
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transition fluide */
+    overflow: hidden; /* Empêche le débordement du lien */
+  }
+  
+  .btn a {
+    display: block; /* Fait du lien un bloc pour qu'il prenne toute la place du bouton */
+    padding: 15px 30px; /* Espacement interne du lien */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    text-align: center; /* Centre le texte */
+  }
+  
+  .btn:hover {
+    background-color: grey;
+    
+  }
+  
+  .btn:hover a {
+    color: #6f42c1;
+  }

@@ -8,6 +8,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AProposComponent } from './pages/apropos/apropos.component';
 import { AjouterIngredientComponent } from './pages/ingredient-create/ingredient-create.component';
 import { RecettesCreateComponent } from './pages/recettes-create/recettes-create.component';
+import { IngredientManagerPageComponent } from './shared/ingredient-manager-page/ingredient-manager-page.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,9 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent},
   { path: 'Apropos', component: AProposComponent},
   { path: 'Créer', component: AjouterIngredientComponent},
-  { path: 'Createrecette',component: RecettesCreateComponent}
+  { path: 'Createrecette',component: RecettesCreateComponent},
+  { path: 'manageincredient',component: IngredientManagerPageComponent}
+
 
 ];
 

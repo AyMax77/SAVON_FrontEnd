@@ -6,10 +6,8 @@ export class RecetteDTO {
     description: string = '';
     surgraissage: number = 0;
     avecSoude: boolean = false;
-    concentrationAlcalin: number = 0;
+    concentrationAlcalin: number = 50;
     qteAlcalin: number = 0;
     ligneIngredients: LigneIngredient[] = [];
-  
-  
   }
   

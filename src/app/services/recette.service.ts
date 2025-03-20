@@ -59,6 +59,6 @@ export class RecetteService {
       return this.http.delete<void>(`${this.apiUrl}/recette/${id}`);
     }
     postRecette(recette: any): Observable<any> {
-      return this.http.post<any>(`${this.apiUrl}/recettes`, recette);
+      return this.http.post<any>(`${this.apiUrl}/recette`, recette);
     }
   }

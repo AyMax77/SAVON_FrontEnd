@@ -8,6 +8,7 @@ import { SimulateurServiceService } from '../../services/Ingredient.service';
   templateUrl: './ingredient-create.component.html',
   styleUrls: ['./ingredient-create.component.css']
 })
+
 export class AjouterIngredientComponent implements OnInit {
   ingredient: Ingredient = new Ingredient()
 
