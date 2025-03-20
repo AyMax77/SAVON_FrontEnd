@@ -1,0 +1,81 @@
+/* Style de base pour le formulaire */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style pour les labels */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style pour les champs de saisie */
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* Pour inclure le padding dans la largeur */
+  }
+  
+  /* Style pour les champs de saisie au focus */
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Style pour la checkbox */
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  /* Style pour le bouton de soumission */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Effet au survol du bouton */
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style pour les messages d'erreur (optionnel) */
+  .error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour les groupes de champs */
+  div {
+    margin-bottom: 20px;
+  }
+  
+  /* Style pour le texte du label de la checkbox */
+  label[for="avecSoude"] {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+  }

@@ -15,6 +15,10 @@ import { IngredientsComponent } from './pages/ingredients/ingredients.component'
 import { AjouterIngredientComponent } from './pages/ingredient-create/ingredient-create.component';
 import { RadarChartComponent } from './components/radar-chart/radar-chat.component';
 import { RecettesCreateComponent } from './pages/recettes-create/recettes-create.component';
+import { IngredientListComponent } from './shared/ingredient-list/ingredient-list.component';
+import { IngredientFormComponent } from './shared/ingredient-form/ingredient-form.component';
+import { IngredientImportExportComponent } from './shared/ingredient-import-export/ingredient-import-export.component';
+import { IngredientManagerPageComponent } from './shared/ingredient-manager-page/ingredient-manager-page.component';
 
 
 @NgModule({
@@ -30,7 +34,11 @@ import { RecettesCreateComponent } from './pages/recettes-create/recettes-create
     AProposComponent,
     AjouterIngredientComponent,
     RadarChartComponent,
-    RecettesCreateComponent,]
+    RecettesCreateComponent,
+    IngredientListComponent,
+    IngredientFormComponent,
+    IngredientImportExportComponent,
+    IngredientManagerPageComponent,]
     ,
   imports: [
     BrowserModule,

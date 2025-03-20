@@ -1,1 +1,35 @@
-<p>recettes-create works!</p>
+<form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="titre">Titre:</label>
+      <input id="titre" name="titre" [(ngModel)]="titre" required>
+    </div>
+  
+    <div>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" [(ngModel)]="description" required></textarea>
+    </div>
+  
+    <div>
+      <label for="surgraissage">Surgraissage:</label>
+      <input id="surgraissage" name="surgraissage" type="number" [(ngModel)]="surgraissage" required> %
+    </div>
+  
+    <div>
+      <label for="avecSoude">Avec soude:</label>
+      <input id="avecSoude" name="avecSoude" type="checkbox" [(ngModel)]="avecSoude">
+    </div>
+  
+    <div>
+      <label for="concentrationAlcalin">Concentration alcalin:</label>
+      <input id="concentrationAlcalin" name="concentrationAlcalin" type="number" [(ngModel)]="concentrationAlcalin" required> %
+    </div>
+  
+    <div>
+      <label for="qteAlcalin">Quantité alcalin:</label>
+      <input id="qteAlcalin" name="qteAlcalin" type="number" [(ngModel)]="qteAlcalin" required> g
+    </div>
+  
+    
+  
+    <button type="submit">Enregistrer la recette</button>
+  </form>

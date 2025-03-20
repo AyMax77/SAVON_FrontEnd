@@ -1,0 +1,146 @@
+/* Style de base pour le tableau */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style pour l'en-tête du tableau */
+  .table-dark {
+    background-color: #343a40; /* Couleur sombre pour l'en-tête */
+    color: #fff;
+  }
+  
+  .table-dark th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #454d55;
+  }
+  
+  /* Style pour les lignes du tableau */
+  .table-bordered td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+  }
+  
+  /* Style pour les lignes alternées */
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; /* Couleur de fond pour les lignes impaires */
+  }
+  
+  /* Style pour les boutons dans le tableau */
+  .btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  .btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
+  /* Style pour les modales */
+  .modal-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-header {
+    background-color: #343a40;
+    color: #fff;
+    border-bottom: 1px solid #454d55;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .modal-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  .modal-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  /* Style pour les boutons dans les modales */
+  .modal-footer .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+  }
+  
+  .modal-footer .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+  }
+  
+  .modal-footer .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+  }
+  
+  .modal-footer .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  /* Style pour le bouton "Supprimer TOUS les ingrédients" */
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  /* Style pour le titre de la liste des ingrédients */
+  h2 {
+    color: #343a40;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style pour le conteneur du bouton "Supprimer TOUS les ingrédients" */
+  .row.col-3 {
+    margin-bottom: 20px;
+  }

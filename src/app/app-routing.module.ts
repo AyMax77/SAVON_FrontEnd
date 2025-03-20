@@ -7,6 +7,7 @@ import { RecettesComponent } from './pages/recettes/recettes.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AProposComponent } from './pages/apropos/apropos.component';
 import { AjouterIngredientComponent } from './pages/ingredient-create/ingredient-create.component';
+import { RecettesCreateComponent } from './pages/recettes-create/recettes-create.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent},
   { path: 'Apropos', component: AProposComponent},
   { path: 'Créer', component: AjouterIngredientComponent},
+  { path: 'Createrecette',component: RecettesCreateComponent}
 
 ];
 
